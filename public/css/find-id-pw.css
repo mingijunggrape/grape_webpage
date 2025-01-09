@@ -1,0 +1,106 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #ffffff;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #121212;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00e6e6;
+}
+
+.login-btn {
+    background-color: #00e6e6;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #121212;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Intro */
+.intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00e6e6;
+}
+
+/* Find Box */
+.find-box {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.find-box .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.find-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+.find-box input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    color: #ffffff;
+}
+
+.find-box .submit-btn {
+    background-color: #00e6e6;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #121212;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.find-box .submit-btn:hover {
+    background-color: #00cccc;
+}
+
+.find-box .info-text {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #cccccc;
+}

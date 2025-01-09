@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학교 홍보 사이트</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">keeper</div>
+        <% if(!Sucess) {%>
+            <button class="login-btn"><a href="/auth/login">LOGIN</a></button>
+        <% }else{%>
+            <button class="login-btn"><a href="/auth/logout">LOGOUT</a></button>    
+        <% } %>
+    </div>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul class="menu">
+                <li>
+                    <a onclick="toggleSubmenu('submenu1')">게시판</a>
+                    <ul id="submenu1"  class="submenu">
+                        <li><a href="/board">공지사항</a></li>
+                        <li><a href="#">건의사항</a></li>
+                        <li><a href="#">정보게시판</a></li>
+                        <li><a href="#">자유게시판</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/about">동아리 활동</a>
+                </li>
+                <li>
+                    <a href="/project">프로젝트</a>
+                </li>
+                <li>
+                    <a href="/seminar">세미나</a>
+                </li>
+                <li>
+                    <a onclick="toggleSubmenu('submenu5')">기타 사이트</a>
+                    <ul id="submenu5" class="submenu">
+                        <li><a href="#">CTF 사이트</a></li>
+                        <li><a href="#">discord</a></li>
+                        <li><a href="#">인스타</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <footer class="footer">
+                <a href="#">버그 및 불편 사항 제보</a>
+            </footer>
+        </nav>
+
+        <main class="main-content">
+            <div class="intro">
+                <h1>keeper</h1>
+                <p>
+                    '지키다'라는 의미를 가진 단어 'KEEP'에서 착안하여,<br>
+                    정보보호에 관한 연구를 진행하고 그 성과를 공유하기 위해 만들어진 동아리입니다.
+                </p>
+            </div>
+        </main>
+    </div>
+    <script src="js/sidebar.js"></script>
+</body>
+</html>

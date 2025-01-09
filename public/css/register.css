@@ -1,0 +1,128 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #121212;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00e6e6;
+}
+
+.login-btn {
+    background-color: #00e6e6;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #121212;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #00cccc;
+}
+
+/* Main Content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 60px); /* Header 높이 제외 */
+}
+
+.intro h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #00e6e6;
+    margin-bottom: 30px;
+}
+
+.register-box {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    color: #ffffff;
+}
+
+.form-group input::placeholder {
+    color: #666666;
+}
+
+.submit-btn {
+    background-color: #00e6e6;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #121212;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #00cccc;
+}
+
+.help-links {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.help-links a {
+    color: #00e6e6;
+    text-decoration: none;
+}
+
+.help-links a:hover {
+    text-decoration: underline;
+}

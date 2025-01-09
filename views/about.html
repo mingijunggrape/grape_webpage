@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학교 홍보 사이트</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/about.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">keeper</div>
+        <button class="login-btn"><a href="auth/login">LOGIN</a></button>
+    </div>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul class="menu">
+                <li>
+                    <a onclick="toggleSubmenu('submenu1')">게시판</a>
+                    <ul id="submenu1"  class="submenu">
+                        <li><a href="/board">공지사항</a></li>
+                        <li><a href="#">건의사항</a></li>
+                        <li><a href="#">정보게시판</a></li>
+                        <li><a href="#">자유게시판</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/about">동아리 활동</a>
+                </li>
+                <li>
+                    <a href="/project">프로젝트</a>
+                </li>
+                <li>
+                    <a href="/seminar">세미나</a>
+                </li>
+                <li>
+                    <a onclick="toggleSubmenu('submenu5')">기타 사이트</a>
+                    <ul id="submenu5" class="submenu">
+                        <li><a href="#">CTF 사이트</a></li>
+                        <li><a href="#">discord</a></li>
+                        <li><a href="#">인스타</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <footer class="footer">
+                <a href="#">버그 및 불편 사항 제보</a>
+            </footer>
+        </nav>
+
+        <main class="main-content">
+               <!-- 제목 및 설명 -->
+               <div class="intro">
+                <h1>HeXA에서 진행한 프로젝트 ↓ 목록</h1>
+                <p>HeXA는, UNIST 학우들을 위해 다양한 서비스를 제공합니다.</p>
+            </div>
+
+            <!-- 검색 바 -->
+            <div class="search-bar">
+                <input type="text" placeholder="검색 (예: BUS HeXA, tag:서비스)">
+                <button class="search-btn">검색</button>
+                <button class="filter-btn">최신순 ↓</button>
+                <button class="year-btn">2024 ↓</button>
+            </div>
+
+            <!-- 상태 필터 -->
+            <div class="filter">
+                <span class="status active">모집중</span>
+                <span class="status">진행중</span>
+                <span class="status">승인중</span>
+                <span class="status">진행완료</span>
+            </div>
+
+            <!-- 활동 게시글 -->
+            <div class="activity-list">
+                <div class="activity-card">
+                    <div class="card-content">
+                        <h3>30조 - 4/13 활동공유</h3>
+                        <p><strong>김성준(3795):</strong> 예타 친구하기, 노래방 가기</p>
+                        <div class="meta">
+                            <span>👍 1</span>
+                            <span>👁️ 10</span>
+                            <span>⏱️ >30일 전</span>
+                        </div>
+                    </div>
+                    <img src="img/sample1.jpg" alt="활동 이미지">
+                </div>
+
+                <div class="activity-card">
+                    <div class="card-content">
+                        <h3>22조 활동 인증 3</h3>
+                        <p><strong>야현:</strong> 4/10 - 카페에서 공부하기 (시험기간이 가까워져서 만나는 데 어려움이 있어 온라인으로 대체)</p>
+                        <div class="meta">
+                            <span>👍 0</span>
+                            <span>👁️ 5</span>
+                            <span>⏱️ >30일 전</span>
+                        </div>
+                    </div>
+                    <img src="img/sample2.jpg" alt="활동 이미지">
+                </div>
+
+                <div class="activity-card">
+                    <div class="card-content">
+                        <h3>33조 활동 인증</h3>
+                        <p><strong>이성민(8326):</strong> 33조 2번째 만남, 가평과 한강 나들이</p>
+                        <div class="meta">
+                            <span>👍 2</span>
+                            <span>👁️ 8</span>
+                            <span>⏱️ >30일 전</span>
+                        </div>
+                    </div>
+                    <img src="img/sample3.jpg" alt="활동 이미지">
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/sidebar.js"></script>
+</body>
+</html>

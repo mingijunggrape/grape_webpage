@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학교 홍보 사이트</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/board.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">keeper</div>
+        <button class="login-btn"><a href="auth/login">LOGIN</a></button>
+    </div>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul class="menu">
+                <li>
+                    <a onclick="toggleSubmenu('submenu1')">게시판</a>
+                    <ul id="submenu1"  class="submenu">
+                        <li><a href="/board">공지사항</a></li>
+                        <li><a href="#">건의사항</a></li>
+                        <li><a href="#">정보게시판</a></li>
+                        <li><a href="#">자유게시판</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/about">동아리 활동</a>
+                </li>
+                <li>
+                    <a href="/project">프로젝트</a>
+                </li>
+                <li>
+                    <a href="/seminar">세미나</a>
+                </li>
+                <li>
+                    <a onclick="toggleSubmenu('submenu5')">기타 사이트</a>
+                    <ul id="submenu5" class="submenu">
+                        <li><a href="#">CTF 사이트</a></li>
+                        <li><a href="#">discord</a></li>
+                        <li><a href="#">인스타</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <footer class="footer">
+                <a href="#">버그 및 불편 사항 제보</a>
+            </footer>
+        </nav>
+
+        <main class="main-content">
+            <div class="board-header">
+                <h1>게시판</h1>
+                <button class="write-btn">글쓰기</button>
+            </div>
+            <table class="board-table">
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>말머리</th>
+                        <th>제목</th>
+                        <th>글쓴이</th>
+                        <th>작성일</th>
+                        <th>조회</th>
+                        <th>추천</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2958</td>
+                        <td>설문</td>
+                        <td><a href="#">ㅁㅁ 스타는?</a></td>
+                        <td>운영자</td>
+                        <td>24/12/16</td>
+                        <td>10</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>2857</td>
+                        <td>AD</td>
+                        <td><a href="#">ㅁㅁㅁ 만기제공!</a></td>
+                        <td>운영자</td>
+                        <td>24/12/11</td>
+                        <td>18</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="prev-page">◀</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#" class="next-page">▶</a>
+            </div>
+
+            <!-- Search -->
+            <div class="search-bar">
+                <select>
+                    <option value="all">제목+내용</option>
+                    <option value="title">제목</option>
+                    <option value="author">글쓴이</option>
+                </select>
+                <input type="text" placeholder="검색어를 입력하세요">
+                <button class="search-btn">검색</button>
+            </div>
+        </main>
+    </div>
+    <script src="js/sidebar.js"></script>
+</body>
+</html>

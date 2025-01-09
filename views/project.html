@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학교 홍보 사이트</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/project.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">keeper</div>
+        <button class="login-btn"><a href="auth/login">LOGIN</a></button>
+    </div>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul class="menu">
+                <li>
+                    <a onclick="toggleSubmenu('submenu1')">게시판</a>
+                    <ul id="submenu1"  class="submenu">
+                        <li><a href="/board">공지사항</a></li>
+                        <li><a href="#">건의사항</a></li>
+                        <li><a href="#">정보게시판</a></li>
+                        <li><a href="#">자유게시판</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/about">동아리 활동</a>
+                </li>
+                <li>
+                    <a href="/project">프로젝트</a>
+                </li>
+                <li>
+                    <a href="/seminar">세미나</a>
+                </li>
+                <li>
+                    <a onclick="toggleSubmenu('submenu5')">기타 사이트</a>
+                    <ul id="submenu5" class="submenu">
+                        <li><a href="#">CTF 사이트</a></li>
+                        <li><a href="#">discord</a></li>
+                        <li><a href="#">인스타</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <footer class="footer">
+                <a href="#">버그 및 불편 사항 제보</a>
+            </footer>
+        </nav>
+
+        <main class="main-content">
+            <!-- 제목 및 설명 -->
+            <div class="intro">
+                <h1>HeXA에서 진행한 프로젝트 ↓ 목록</h1>
+                <p>HeXA는, UNIST 학우들을 위해 다양한 서비스를 제공합니다.</p>
+            </div>
+
+            <!-- 검색 바 -->
+            <div class="search-bar">
+                <input type="text" placeholder="검색 (예: BUS HeXA, tag:서비스)">
+                <button class="search-btn">검색</button>
+                <button class="filter-btn">최신순 ↓</button>
+                <button class="year-btn">2024 ↓</button>
+            </div>
+
+            <!-- 상태 필터 -->
+            <div class="filter">
+                <span class="status active">모집중</span>
+                <span class="status">진행중</span>
+                <span class="status">승인중</span>
+                <span class="status">진행완료</span>
+            </div>
+
+            <!-- 기술 스택 -->
+            <div class="tech-stack">
+                <span>Web-Hacking</span>
+                <span>C/C++</span>
+                <span>Python</span>
+                <span>System-Hacking</span>
+                <span>Front-end</span>
+                <span>Back-end</span>
+                <span>ReactJS</span>
+                <span>Flask</span>
+                <span>SQLite3</span>
+                <span>PyTorch</span>
+                <span>NLP</span>
+                <span>Unity</span>
+                <span>C#</span>
+                <span>Gobot</span>
+                <span>Arduino</span>
+                <span>기획</span>
+                <span>Quantum Computing</span>
+            </div>
+
+            <!-- 프로젝트 카드 -->
+            <div class="project-list">
+                <div class="project-card">
+                    <img src="img/project1.png" alt="체스 봇 만들기">
+                    <h3>체스 봇 만들기</h3>
+                </div>
+                <div class="project-card">
+                    <img src="img/project2.png" alt="NovelGPT">
+                    <h3>NovelGPT (소설 쓰기 AI)</h3>
+                </div>
+                <div class="project-card">
+                    <img src="img/project3.png" alt="미술">
+                    <h3>HeXA 미술 네이터</h3>
+                </div>
+                <div class="project-card">
+                    <img src="img/project4.png" alt="CTF">
+                    <h3>CTF Professional Training</h3>
+                </div>
+                <div class="project-card">
+                    <img src="img/project5.png" alt="Hackathon">
+                    <h3>2024 Hackathon 준비</h3>
+                </div>
+            </div>
+
+            <!-- 페이지네이션 -->
+            <div class="pagination">
+                <a href="#" class="prev-page">◀</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#" class="next-page">▶</a>
+            </div>
+        </main>
+    </div>
+    <script src="js/sidebar.js"></script>
+</body>
+</html>

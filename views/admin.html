@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 페이지</title>
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Admin Dashboard</div>
+        <button class="logout-btn">LOGOUT</button>
+    </div>
+
+    <div class="container">
+        <main class="main-content">
+            <!-- 제목 -->
+            <div class="intro">
+                <h1>관리자 대시보드</h1>
+                <p>웹사이트 관리를 위한 모든 기능을 제공합니다.</p>
+            </div>
+
+            <!-- 관리 기능 -->
+            <div class="admin-actions">
+                <button class="action-btn">사용자 관리</button>
+                <button class="action-btn">게시판 관리</button>
+                <button class="action-btn">공지사항 관리</button>
+                <button class="action-btn">파일 업로드</button>
+                <button class="action-btn">시스템 설정</button>
+            </div>
+
+            <!-- 사용자 관리 테이블 -->
+            <div class="user-management">
+                <h2>사용자 목록</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>아이디</th>
+                            <th>이메일</th>
+                            <th>권한</th>
+                            <th>상태</th>
+                            <th>관리</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>user1</td>
+                            <td>user1@example.com</td>
+                            <td>사용자</td>
+                            <td>활성</td>
+                            <td>
+                                <button class="table-btn">수정</button>
+                                <button class="table-btn delete">삭제</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>admin</td>
+                            <td>admin@example.com</td>
+                            <td>관리자</td>
+                            <td>활성</td>
+                            <td>
+                                <button class="table-btn">수정</button>
+                                <button class="table-btn delete">삭제</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

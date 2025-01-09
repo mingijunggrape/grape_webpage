@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학교 홍보 사이트</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/seminar.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">keeper</div>
+        <button class="login-btn"><a href="auth/login">LOGIN</a></button>
+    </div>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul class="menu">
+                <li>
+                    <a onclick="toggleSubmenu('submenu1')">게시판</a>
+                    <ul id="submenu1"  class="submenu">
+                        <li><a href="/board">공지사항</a></li>
+                        <li><a href="#">건의사항</a></li>
+                        <li><a href="#">정보게시판</a></li>
+                        <li><a href="#">자유게시판</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/about">동아리 활동</a>
+                </li>
+                <li>
+                    <a href="/project">프로젝트</a>
+                </li>
+                <li>
+                    <a href="/seminar">세미나</a>
+                </li>
+                <li>
+                    <a onclick="toggleSubmenu('submenu5')">기타 사이트</a>
+                    <ul id="submenu5" class="submenu">
+                        <li><a href="#">CTF 사이트</a></li>
+                        <li><a href="#">discord</a></li>
+                        <li><a href="#">인스타</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <footer class="footer">
+                <a href="#">버그 및 불편 사항 제보</a>
+            </footer>
+        </nav>
+
+        <main class="main-content">
+            <!-- 제목 및 설명 -->
+            <div class="intro">
+                <h1>HeXA에서 진행한 세미나 ↓ 목록</h1>
+                <p>HeXA는, UNIST 학우들을 위해 다양한 서비스를 제공합니다.</p>
+            </div>
+
+            <!-- 검색 바 -->
+            <div class="search-bar">
+                <input type="text" placeholder="검색 (예: BUS HeXA, tag:서비스)">
+                <button class="search-btn">🔍</button>
+                <button class="filter-btn">2024 ↓</button>
+            </div>
+
+            <!-- 세미나 목록 -->
+            <div class="seminar-list">
+                <div class="seminar-card">
+                    <span class="icon">📄</span>
+                    <h3>2024 2학기 종강총회</h3>
+                    <p>2024-12-04</p>
+                </div>
+                <div class="seminar-card">
+                    <span class="icon">📄</span>
+                    <h3>NEXUS 2024</h3>
+                    <p>2024-11-01</p>
+                </div>
+                <div class="seminar-card">
+                    <span class="icon">📄</span>
+                    <h3>2024 2학기 개강총회</h3>
+                    <p>2024-09-11</p>
+                </div>
+                <div class="seminar-card">
+                    <span class="icon">📄</span>
+                    <h3>2024 1학기 종강총회</h3>
+                    <p>2024-05-29</p>
+                </div>
+                <div class="seminar-card">
+                    <span class="icon">📄</span>
+                    <h3>2024 1학기 개강총회</h3>
+                    <p>2024-03-11</p>
+                </div>
+                <div class="seminar-card">
+                    <span class="icon">📄</span>
+                    <h3>2023 2학기 개강총회</h3>
+                    <p>2023-09-11</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/sidebar.js"></script>
+</body>
+</html>
